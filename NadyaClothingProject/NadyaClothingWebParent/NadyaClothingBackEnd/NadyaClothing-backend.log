@@ -1,0 +1,66 @@
+2022-04-21 23:35:24.581  INFO 23224 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : Starting NadyaClothingBackEndApplication using Java 17.0.2 on CPJDESKTOP with PID 23224 (C:\JavaProjects\NadyaClothingProjectWorkSpace\NadyaClothingProject\NadyaClothingProject\NadyaClothingWebParent\NadyaClothingBackEnd\target\classes started by CPere in C:\JavaProjects\NadyaClothingProjectWorkSpace\NadyaClothingProject\NadyaClothingProject\NadyaClothingWebParent\NadyaClothingBackEnd)
+2022-04-21 23:35:24.581  INFO 23224 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 23:35:25.031  INFO 23224 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 23:35:25.052  INFO 23224 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2022-04-21 23:35:25.253  INFO 23224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 23:35:25.255  INFO 23224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 23:35:25.255  INFO 23224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 23:35:25.300  INFO 23224 --- [restartedMain] o.a.c.c.C.[.[.[/NadyaClothingAdmin]      : Initializing Spring embedded WebApplicationContext
+2022-04-21 23:35:25.300  INFO 23224 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 714 ms
+2022-04-21 23:35:25.379  INFO 23224 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 23:35:25.395  INFO 23224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-04-21 23:35:25.425  INFO 23224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-04-21 23:35:25.426  INFO 23224 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-21 23:35:25.530  INFO 23224 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 23:35:25.531  INFO 23224 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 23:35:25.580  WARN 23224 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 23:35:25.774  WARN 23224 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:35:25.775  INFO 23224 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2022-04-21 23:35:25.776  WARN 23224 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:35:25.776  INFO 23224 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-04-21 23:35:25.776  WARN 23224 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:35:25.776  INFO 23224 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2022-04-21 23:35:25.788  INFO 23224 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 23:35:25.880  INFO 23224 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 23:35:26.483  INFO 23224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-21 23:35:26.502  INFO 23224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/NadyaClothingAdmin'
+2022-04-21 23:35:26.518  INFO 23224 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : Started NadyaClothingBackEndApplication in 2.035 seconds (JVM running for 1180.325)
+2022-04-21 23:35:26.520  INFO 23224 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-21 23:37:08.193  INFO 23224 --- [RMI TCP Connection(36)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-04-21 23:37:08.210  INFO 23224 --- [RMI TCP Connection(36)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 23:37:08.211  INFO 23224 --- [RMI TCP Connection(36)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-04-21 23:37:08.217  INFO 23224 --- [RMI TCP Connection(36)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-04-21 23:37:12.051  INFO 3316 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : Starting NadyaClothingBackEndApplication using Java 17.0.2 on CPJDESKTOP with PID 3316 (C:\JavaProjects\NadyaClothingProjectWorkSpace\NadyaClothingProject\NadyaClothingProject\NadyaClothingWebParent\NadyaClothingBackEnd\target\classes started by CPere in C:\JavaProjects\NadyaClothingProjectWorkSpace\NadyaClothingProject\NadyaClothingProject\NadyaClothingWebParent\NadyaClothingBackEnd)
+2022-04-21 23:37:12.053  INFO 3316 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-04-21 23:37:12.117  INFO 3316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-21 23:37:12.117  INFO 3316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-21 23:37:13.048  INFO 3316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-21 23:37:13.127  INFO 3316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 2 JPA repository interfaces.
+2022-04-21 23:37:14.034  INFO 3316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-21 23:37:14.067  INFO 3316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-21 23:37:14.067  INFO 3316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-21 23:37:14.196  INFO 3316 --- [restartedMain] o.a.c.c.C.[.[.[/NadyaClothingAdmin]      : Initializing Spring embedded WebApplicationContext
+2022-04-21 23:37:14.197  INFO 3316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2079 ms
+2022-04-21 23:37:14.500  INFO 3316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-21 23:37:14.583  INFO 3316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-21 23:37:14.821  INFO 3316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-21 23:37:14.983  INFO 3316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-21 23:37:15.369  INFO 3316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-21 23:37:15.395  INFO 3316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-04-21 23:37:16.488  INFO 3316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-21 23:37:16.502  INFO 3316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 23:37:16.587  WARN 3316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-21 23:37:17.465  WARN 3316 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/images/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:37:17.467  INFO 3316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/images/**'] with []
+2022-04-21 23:37:17.467  WARN 3316 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/js/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:37:17.468  INFO 3316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/js/**'] with []
+2022-04-21 23:37:17.468  WARN 3316 --- [restartedMain] o.s.s.c.a.web.builders.WebSecurity       : You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-21 23:37:17.468  INFO 3316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/webjars/**'] with []
+2022-04-21 23:37:17.514  INFO 3316 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-04-21 23:37:17.779  INFO 3316 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-04-21 23:37:18.578  INFO 3316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-21 23:37:18.634  INFO 3316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/NadyaClothingAdmin'
+2022-04-21 23:37:18.649  INFO 3316 --- [restartedMain] c.n.a.NadyaClothingBackEndApplication    : Started NadyaClothingBackEndApplication in 7.055 seconds (JVM running for 7.961)
+2022-04-21 23:42:10.388  INFO 3316 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-21 23:42:10.398  INFO 3316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-21 23:42:10.413  INFO 3316 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

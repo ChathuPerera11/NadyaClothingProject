@@ -94,17 +94,14 @@ public class UserRepositoryTest {
 	}	
 	
 	
-
-
-//	@Test
-//	public void testUpdateUserDetails() {
-//		User user = repo.findById(2).get();
-//		user.setEnabled(true);
-//		user.setEmail("mudari23@gmail.com");
-//		
-//		repo.save(user);
-//	}
-//	
+	@Test
+	public void testUpdateUserDetails() {
+		User user = repo.findById(3).get();
+		user.setPassword("$2a$10$4hVHwMsCOWku39aGdJVRCO0bUaorEb4yW2iT6rMnsr/jMVUbYEvdW");
+	
+		repo.save(user);
+	}
+	
 //	@Test
 //	public void testUpdateUserRoles() {
 //		User user = repo.findById(2).get();

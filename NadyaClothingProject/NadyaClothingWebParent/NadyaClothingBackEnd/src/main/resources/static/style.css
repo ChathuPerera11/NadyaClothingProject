@@ -3,6 +3,12 @@
 *.icon-green {color: green}
 *.icon-dark {color: gray}
 
+.parent { 
+  display: flex; 
+}
+.child {
+  flex-grow: 1;
+}
 
 @media screen and (max-width: 768px) {
 	/* small screen */

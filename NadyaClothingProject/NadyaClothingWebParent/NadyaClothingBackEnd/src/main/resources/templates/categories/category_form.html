@@ -76,6 +76,8 @@
 	<div th:replace="fragments :: footer"></div>
 	
 </div>
+<script th:src="@{/js/common_list.js}"></script>
+<script th:src="@{/js/common_form.js}"></script>
 <script type="text/javascript">
 	moduleURL = "[[@{/categories}]]";
 	
@@ -100,13 +102,14 @@
 			} else {
 				showErrorModal("Unknown response from server");
 			}
-			
+			}).fail(function() {
+			showErrorModal("Could not connect to the server");
 		});
 		
 		return false;
 	}
-	
+
+
 </script>
-<script th:src="@{/js/common_form.js}"></script>
 </body>
 </html>

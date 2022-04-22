@@ -1,6 +1,5 @@
 package com.nadyaclothing.common.entity;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,14 +38,14 @@ public class Category {
 	
 	@OneToMany(mappedBy = "parent")
 	private Set<Category> children = new HashSet<>();
+
 	public Category() {
 	}
 	
 	public Category(Integer id) {
 		this.id = id;
 	}
-	
-	
+
 	public static Category copyIdAndName(Category category) {
 		Category copyCategory = new Category();
 		copyCategory.setId(category.getId());
@@ -70,6 +69,7 @@ public class Category {
 		copyCategory.setImage(category.getImage());
 		copyCategory.setAlias(category.getAlias());
 		copyCategory.setEnabled(category.isEnabled());
+		copyCategory.setHasChildren(category.getChildren().size() > 0);
 		
 		return copyCategory;		
 	}
@@ -80,7 +80,7 @@ public class Category {
 		
 		return copyCategory;
 	}
-
+	
 	public Category(String name) {
 		this.name = name;
 		this.alias = name;
@@ -92,6 +92,12 @@ public class Category {
 		this.parent = parent;
 	}	
 
+	public Category(Integer id, String name, String alias) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.alias = alias;
+	}
 
 	public Integer getId() {
 		return id;
@@ -148,6 +154,7 @@ public class Category {
 	public void setChildren(Set<Category> children) {
 		this.children = children;
 	}
+	
 	@Transient
 	public String getImagePath() {
 		if (this.id == null) return "/images/image-thumbnail.png";
@@ -155,4 +162,16 @@ public class Category {
 		return "/category-images/" + this.id + "/" + this.image;
 	}
 	
+	public boolean isHasChildren() {
+		return hasChildren;
+	}
+
+	public void setHasChildren(boolean hasChildren) {
+		this.hasChildren = hasChildren;
+	}
+
+	@Transient
+	private boolean hasChildren;
+	
 }
+

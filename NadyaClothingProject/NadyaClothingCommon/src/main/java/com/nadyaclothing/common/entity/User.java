@@ -1,7 +1,7 @@
 package com.nadyaclothing.common.entity;
 
-import java.beans.Transient;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -14,6 +14,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @Entity
 @Table(name = "users")
@@ -131,16 +132,29 @@ public class User {
 		return "User [id=" + id + ", email=" + email + ", firstName=" + firstName + ", lastName=" + lastName
 				+ ", roles=" + roles + "]";
 	}
+	
 	@Transient
 	public String getPhotosImagePath() {
-		if (id == null || photos == null) return "/images/default-user.ico";
+		if (id == null || photos == null) return "/images/default-user.png";
 		
 		return "/user-photos/" + this.id + "/" + this.photos;
 	}
+	
 	@Transient
 	public String getFullName() {
 		return firstName + " " + lastName;
 	}
-
 	
+	public boolean hasRole(String roleName) {
+		Iterator<Role> iterator = roles.iterator();
+		
+		while (iterator.hasNext()) {
+			Role role = iterator.next();
+			if (role.getName().equals(roleName)) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }

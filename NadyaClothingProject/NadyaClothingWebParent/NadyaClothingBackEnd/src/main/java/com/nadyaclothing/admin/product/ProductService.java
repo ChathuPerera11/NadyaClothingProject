@@ -14,6 +14,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.nadyaclothing.common.entity.Product;
+import com.nadyaclothing.common.exception.ProductNotFoundException;
 
 @Service
 @Transactional

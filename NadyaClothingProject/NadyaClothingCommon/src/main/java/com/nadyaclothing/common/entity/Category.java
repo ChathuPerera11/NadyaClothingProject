@@ -1,5 +1,6 @@
 package com.nadyaclothing.common.entity;
 
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -172,6 +173,12 @@ public class Category {
 
 	@Transient
 	private boolean hasChildren;
+
+	@Override
+	public String toString() {
+		return this.name;
+	}
 	
 }
+
 

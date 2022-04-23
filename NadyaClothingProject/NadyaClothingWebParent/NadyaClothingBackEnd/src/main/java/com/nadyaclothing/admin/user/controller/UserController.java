@@ -22,7 +22,6 @@ import com.nadyaclothing.admin.FileUploadUtil;
 import com.nadyaclothing.admin.user.UserNotFoundException;
 import com.nadyaclothing.admin.user.UserService;
 import com.nadyaclothing.admin.user.export.UserCsvExporter;
-import com.nadyaclothing.admin.user.export.UserCsvExporter;
 import com.nadyaclothing.common.entity.Role;
 import com.nadyaclothing.common.entity.User;
 
@@ -43,9 +42,6 @@ public class UserController {
 			@Param("sortField") String sortField, @Param("sortDir") String sortDir,
 			@Param("keyword") String keyword
 			) {
-		System.out.println("Sort Field: " + sortField);
-		System.out.println("Sort Order: " + sortDir);
-		
 		Page<User> page = service.listByPage(pageNum, sortField, sortDir, keyword);
 		
 		List<User> listUsers = page.getContent();
@@ -71,6 +67,7 @@ public class UserController {
 		
 		return "users/users";		
 	}
+	
 	
 	@GetMapping("/users/new")
 	public String newUser(Model model) {
@@ -115,7 +112,6 @@ public class UserController {
 		String firstPartOfEmail = user.getEmail().split("@")[0];
 		return "redirect:/users/page/1?sortField=id&sortDir=asc&keyword=" + firstPartOfEmail;
 	}
-	
 	
 	@GetMapping("/users/edit/{id}")
 	public String editUser(@PathVariable(name = "id") Integer id, 

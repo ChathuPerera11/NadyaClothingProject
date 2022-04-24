@@ -4,9 +4,9 @@
 <div th:fragment="header_menu">
 	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 		<a class="navbar-brand" th:href="@{/}">
-			<img th:src="@{/images/nadya_logo.ico}" />
+			<img th:src="@{${SITE_LOGO}}" />
 		</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar, #searchNavbar">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar, #searchNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="topNavbar">
@@ -72,7 +72,7 @@
 		</nav>
 	</div>
 	<div th:fragment="footer" class="text-center m-3">
-		<p>Nadya Clothing - Copyright &copy; nadyaclothing</p>
+		<p>[[${COPYRIGHT}]]</p>
 	</div>	
 </div>
 </body>

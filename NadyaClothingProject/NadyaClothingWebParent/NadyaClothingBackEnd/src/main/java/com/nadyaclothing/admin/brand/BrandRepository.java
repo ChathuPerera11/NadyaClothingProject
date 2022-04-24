@@ -3,14 +3,15 @@ package com.nadyaclothing.admin.brand;
 
 import java.util.List;
 
+
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.PagingAndSortingRepository;
 
+import com.nadyaclothing.admin.paging.SearchRepository;
 import com.nadyaclothing.common.entity.Brand;
 
-public interface BrandRepository extends PagingAndSortingRepository<Brand, Integer> {
+public interface BrandRepository extends SearchRepository<Brand, Integer> {
 	
 	public Long countById(Integer id);
 	

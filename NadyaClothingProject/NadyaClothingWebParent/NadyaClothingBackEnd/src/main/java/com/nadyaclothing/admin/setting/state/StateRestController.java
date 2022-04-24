@@ -1,6 +1,5 @@
 package com.nadyaclothing.admin.setting.state;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.nadyaclothing.common.entity.Country;
 import com.nadyaclothing.common.entity.State;
+import com.nadyaclothing.common.entity.StateDTO;
 
 @RestController
 public class StateRestController {
@@ -43,3 +43,4 @@ public class StateRestController {
 		repo.deleteById(id);
 	}
 }
+

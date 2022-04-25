@@ -14,21 +14,26 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
         format_sql: true
-    show-sql: true
+    show-sql: false
     
   security:
     oauth2:
       client:
         registration:
           google:
-          #  client-id: 182557182495-4ojqb7gpdf0cee6i97md5b3tns5sbc1e.apps.googleusercontent.com
-          #  client-secret: zpJMafs7JAf4fNVLZirNcRnO
+            client-id: 223311024256-iu50oq6q42qnrm04easr7p9j4p3ko050.apps.googleusercontent.com
+            client-secret: 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
             scope:
             - email
             - profile
           facebook:
-         #   client-id: 1065065327239672
-         #   client-secret: 36b56b7e6d6540eb7a40d538f8d99c05
+            client-id: 515565180167245
+            client-secret: 30b5c2d1f34d0c5daf50e32f034ff558
             scope:
             - email
             - public_profile
+       
+  spring:
+    main:
+      allow-circular-references: true
+                  

@@ -1,6 +1,5 @@
 package com.nadyaclothing.customer;
 
-
 import java.util.Date;
 import java.util.List;
 

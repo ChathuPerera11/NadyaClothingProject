@@ -26,4 +26,3 @@ public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 	public Customer findByResetPasswordToken(String token);
 }
 
-

@@ -1,5 +1,6 @@
 package com.nadyaclothing.admin.customer;
 
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,6 @@ import com.nadyaclothing.common.exception.CustomerNotFoundException;
 @Controller
 public class CustomerController {
 	private String defaultRedirectURL = "redirect:/customers/page/1?sortField=firstName&sortDir=asc";
-	
 	
 	@Autowired private CustomerService service;
 	

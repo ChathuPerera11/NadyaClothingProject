@@ -34,10 +34,11 @@ public class SettingFilter implements Filter {
 			return;
 		}
 		
-		List<Setting> generalSettings = service.getGeneralSettings();
+	List<Setting> generalSettings = service.getGeneralSettings();
 		
 		generalSettings.forEach(setting -> {
 			request.setAttribute(setting.getKey(), setting.getValue());
+			System.out.println(setting.getKey() + " == > " + setting.getValue());
 		});
 		
 		chain.doFilter(request, response);
